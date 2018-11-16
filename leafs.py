@@ -39,7 +39,7 @@ model.add(Flatten())
 model.add(Dense(256))
 model.add(Activation('relu'))
 model.add(BatchNormalization())
-model.add(Dense(185))
+model.add(Dense(184))
 model.add(Activation('softmax'))
 
 model.compile(loss='categorical_crossentropy',
