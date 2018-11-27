@@ -46,6 +46,8 @@ model.compile(loss='categorical_crossentropy',
             optimizer='rmsprop',
             metrics=['accuracy'])
 
+model.load_weights('my_model.h5')
+model.save('my_model.h5')
 # this is the augmentation configuration we will use for training
 train_datagen = ImageDataGenerator(
         rescale=1. / 255,
